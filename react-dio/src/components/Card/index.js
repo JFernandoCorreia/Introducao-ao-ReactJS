@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from '../Button';
 
 function Card() {
 
@@ -18,20 +19,18 @@ function Card() {
                 Meu primeiro card
             </div>
             <div className="card-body">
-                <button
-                    type="button"
+                <Button
                     className="btn btn-success"
-                    onclick={Adicionar}
+                    onClick={Adicionar}
                 >
                     Adicionar
-                </button>
-                <button
-                    type="button"
+                </Button>
+                <Button
                     className="btn btn-danger"
-                    onclick={Remover}
+                    onClick={Remover}
                 >
                     Remover
-                </button>
+                </Button>
                 <p>{valor}</p>
             </div>
         </div>
