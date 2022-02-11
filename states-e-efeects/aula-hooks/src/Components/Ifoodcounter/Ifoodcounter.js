@@ -7,7 +7,9 @@ export default function Ifoodcounter() {
     const [buttonStyle, setButtonStyle] = useState("counter-button-minus-active");
 
     useEffect(()=>{
-        
+        alert('Você não pode mais diminuir itens!')
+        //console.log(`O estilo do botão atual é: ${buttonStyle}`)
+        //document.getElementBuId("moeda").innerHTML = 2.00 * value
     },[buttonStyle]);
 
     function down() {
